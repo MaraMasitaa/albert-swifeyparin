@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loml</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #ffefef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .bubbles {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .heart-bubble {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #ff6ec4, #7873f5);
+            border-radius: 50%;
+            overflow: hidden;
+            animation: float 8s ease-in-out infinite;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        /* For the images inside the heart bubbles */
+        .heart-bubble img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            border-radius: 50%;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh);
+            }
+            50% {
+                transform: translateY(50vh) scale(1.1);
+            }
+            100% {
+                transform: translateY(-100vh);
+            }
+        }
+
+        /* Adjust individual heart bubble positions */
+        .heart-bubble:nth-child(1) {
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .heart-bubble:nth-child(2) {
+            left: 50%;
+            animation-delay: 2s;
+        }
+
+        .heart-bubble:nth-child(3) {
+            left: 80%;
+            animation-delay: 4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="bubbles">
+        <div class="heart-bubble">
+            <img src="parin1.png" alt="Heart 1">
+          
+        </div>
+        <div class="heart-bubble">
+            <img src="parin2.jpg" alt="Heart 2">
+           
+        </div>
+        <div class="heart-bubble">
+            <img src="parin3.jpg" alt="Heart 3">
+            
+        </div>
+        <div class="heart-bubble">
+            <img src="parin4.png" alt="Heart 3">
+           
+        </div>
+        <div class="heart-bubble">
+            <img src="parin5.jpg" alt="Heart 3">
+           
+        </div>
+        <div class="heart-bubble">
+            <img src="parin6.jpg" alt="Heart 3">
+           
+        </div>
+        <div class="heart-bubble">
+            <img src="parin7.jpg" alt="Heart 3">
+            
+        </div>
+        <div class="heart-bubble">
+            <img src="./img/p14.jpg" alt="Heart 3">
+          
+        </div>
+        <div class="heart-bubble">
+            <img src="./img/p15.jpg" alt="Heart 3">
+           
+        </div>
+        <div class="heart-bubble">
+            <img src="./img/p16.jpg" alt="Heart 3">
+          
+        </div>
+        <div class="heart-bubble">
+            <img src="./img/p17.jpg" alt="Heart 3">
+        
+        </div>
+        <div class="heart-bubble">
+            <img src="./img/p18.jpg" alt="Heart 3">
+            
+        </div>
+        <div class="heart-bubble">
+            <img src="./img/p19.jpg" alt="Heart 3">
+           
+        </div>
+      
+        <!-- Add more heart bubbles with images and text as needed -->
+    </div>
+</body>
+</html>
